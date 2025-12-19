@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>සර්ප ක්‍රීඩාව (Snake Game)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>සර්ප ක්‍රීඩාව</h1>
+        
+        <div class="info-panel">
+            <p>ලකුණු: <span id="score">0</span></p>
+            <p>ඉතිරි අවස්ථා: <span id="lives">10</span></p>
+        </div>
+
+        <div class="controls">
+            <label>වේගය තෝරන්න:</label>
+            <select id="speedSelect">
+                <option value="200">හේමින් (Slow)</option>
+                <option value="100" selected>සාමාන්‍ය (Normal)</option>
+                <option value="50">වේගවත් (Fast)</option>
+            </select>
+            <button id="startBtn">ආරම්භ කරන්න</button>
+        </div>
+
+        <canvas id="gameCanvas" width="400" height="400"></canvas>
+
+        <div class="instructions">
+            <h3>භාවිතා කරන ආකාරය:</h3>
+            <ul>
+                <li>ඊතල යතුරු (Arrow Keys) මගින් සර්පයා පාලනය කරන්න.</li>
+                <li>කෑම කන විට සර්පයා දිගු වේ.</li>
+                <li>බිත්තියේ වැදුණහොත් එක් අවස්ථාවක් අහිමි වේ.</li>
+                <li>අවස්ථා 10ක් අවසන් වූ පසු ක්‍රීඩාව අවසන් වේ.</li>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
